@@ -39,8 +39,8 @@
             btnBrowse = new Button();
             rdVideo = new RadioButton();
             rdAudio = new RadioButton();
-            cmbQuality = new ComboBox();
-            cmbFormat = new ComboBox();
+            cmbQualityVideo = new ComboBox();
+            cmbFormatVideo = new ComboBox();
             setFormatVideo = new Label();
             cmbAudioFormat = new ComboBox();
             cmbAudioQuality = new ComboBox();
@@ -56,6 +56,9 @@
             downloadSpeed = new Label();
             lblSpeed = new Label();
             setTitle = new Label();
+            btnPause = new Button();
+            btnResume = new Button();
+            btnCancel = new Button();
             setQulityVideo = new Label();
             setQualityAudio = new Label();
             ((System.ComponentModel.ISupportInitialize)thumbnailPicBox).BeginInit();
@@ -98,7 +101,7 @@
             // 
             // btnDownload
             // 
-            btnDownload.Location = new Point(985, 469);
+            btnDownload.Location = new Point(985, 335);
             btnDownload.Name = "btnDownload";
             btnDownload.Size = new Size(126, 38);
             btnDownload.TabIndex = 2;
@@ -153,21 +156,21 @@
             rdAudio.Text = "Audio";
             rdAudio.UseVisualStyleBackColor = true;
             // 
-            // cmbQuality
+            // cmbQualityVideo
             // 
-            cmbQuality.FormattingEnabled = true;
-            cmbQuality.Location = new Point(612, 126);
-            cmbQuality.Name = "cmbQuality";
-            cmbQuality.Size = new Size(152, 38);
-            cmbQuality.TabIndex = 7;
+            cmbQualityVideo.FormattingEnabled = true;
+            cmbQualityVideo.Location = new Point(612, 126);
+            cmbQualityVideo.Name = "cmbQualityVideo";
+            cmbQualityVideo.Size = new Size(152, 38);
+            cmbQualityVideo.TabIndex = 7;
             // 
-            // cmbFormat
+            // cmbFormatVideo
             // 
-            cmbFormat.FormattingEnabled = true;
-            cmbFormat.Location = new Point(273, 126);
-            cmbFormat.Name = "cmbFormat";
-            cmbFormat.Size = new Size(152, 38);
-            cmbFormat.TabIndex = 7;
+            cmbFormatVideo.FormattingEnabled = true;
+            cmbFormatVideo.Location = new Point(273, 126);
+            cmbFormatVideo.Name = "cmbFormatVideo";
+            cmbFormatVideo.Size = new Size(152, 38);
+            cmbFormatVideo.TabIndex = 7;
             // 
             // setFormatVideo
             // 
@@ -181,7 +184,7 @@
             // cmbAudioFormat
             // 
             cmbAudioFormat.FormattingEnabled = true;
-            cmbAudioFormat.Location = new Point(612, 182);
+            cmbAudioFormat.Location = new Point(273, 185);
             cmbAudioFormat.Name = "cmbAudioFormat";
             cmbAudioFormat.Size = new Size(152, 38);
             cmbAudioFormat.TabIndex = 7;
@@ -189,7 +192,7 @@
             // cmbAudioQuality
             // 
             cmbAudioQuality.FormattingEnabled = true;
-            cmbAudioQuality.Location = new Point(273, 182);
+            cmbAudioQuality.Location = new Point(612, 185);
             cmbAudioQuality.Name = "cmbAudioQuality";
             cmbAudioQuality.Size = new Size(152, 38);
             cmbAudioQuality.TabIndex = 7;
@@ -228,7 +231,7 @@
             // 
             // thumbnailPicBox
             // 
-            thumbnailPicBox.Location = new Point(911, 335);
+            thumbnailPicBox.Location = new Point(770, 335);
             thumbnailPicBox.Name = "thumbnailPicBox";
             thumbnailPicBox.Size = new Size(200, 120);
             thumbnailPicBox.TabIndex = 13;
@@ -263,7 +266,7 @@
             // status
             // 
             status.AutoSize = true;
-            status.Location = new Point(12, 480);
+            status.Location = new Point(12, 475);
             status.Name = "status";
             status.Size = new Size(73, 30);
             status.TabIndex = 15;
@@ -296,12 +299,40 @@
             setTitle.TabIndex = 17;
             setTitle.Text = "Title :";
             // 
+            // btnPause
+            // 
+            btnPause.FlatStyle = FlatStyle.System;
+            btnPause.Location = new Point(985, 379);
+            btnPause.Name = "btnPause";
+            btnPause.Size = new Size(126, 38);
+            btnPause.TabIndex = 2;
+            btnPause.Text = "Pause";
+            btnPause.UseVisualStyleBackColor = true;
+            // 
+            // btnResume
+            // 
+            btnResume.Location = new Point(985, 423);
+            btnResume.Name = "btnResume";
+            btnResume.Size = new Size(126, 38);
+            btnResume.TabIndex = 2;
+            btnResume.Text = "Resume";
+            btnResume.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            btnCancel.Location = new Point(987, 467);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(126, 38);
+            btnCancel.TabIndex = 2;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(13F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1123, 514);
+            ClientSize = new Size(1123, 515);
             Controls.Add(setTitle);
             Controls.Add(lblSpeed);
             Controls.Add(downloadSpeed);
@@ -317,15 +348,18 @@
             Controls.Add(cmbAudioQuality);
             Controls.Add(setQulityVideo);
             Controls.Add(cmbAudioFormat);
-            Controls.Add(cmbFormat);
+            Controls.Add(cmbFormatVideo);
             Controls.Add(cobSubtitle);
-            Controls.Add(cmbQuality);
+            Controls.Add(cmbQualityVideo);
             Controls.Add(rdAudio);
             Controls.Add(rdVideo);
             Controls.Add(txtPath);
             Controls.Add(lblPath);
             Controls.Add(btnReset);
             Controls.Add(btnBrowse);
+            Controls.Add(btnCancel);
+            Controls.Add(btnResume);
+            Controls.Add(btnPause);
             Controls.Add(btnDownload);
             Controls.Add(txtURL);
             Controls.Add(url);
@@ -350,8 +384,8 @@
         private Button btnBrowse;
         private RadioButton rdVideo;
         private RadioButton rdAudio;
-        private ComboBox cmbQuality;
-        private ComboBox cmbFormat;
+        private ComboBox cmbQualityVideo;
+        private ComboBox cmbFormatVideo;
         private Label setFormatVideo;
         private ComboBox cmbAudioFormat;
         private ComboBox cmbAudioQuality;
@@ -367,5 +401,8 @@
         private Label downloadSpeed;
         private Label lblSpeed;
         private Label setTitle;
+        private Button btnPause;
+        private Button btnResume;
+        private Button btnCancel;
     }
 }
