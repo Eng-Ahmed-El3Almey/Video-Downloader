@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Label lblQuality;
-            Label label1;
+            Label setQulityVideo;
+            Label setQualityAudio;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             url = new Label();
             txtURL = new TextBox();
@@ -41,43 +41,43 @@
             rdAudio = new RadioButton();
             cmbQuality = new ComboBox();
             cmbFormat = new ComboBox();
-            lblFormat = new Label();
+            setFormatVideo = new Label();
             cmbAudioFormat = new ComboBox();
             cmbAudioQuality = new ComboBox();
-            label2 = new Label();
+            setFormatAudio = new Label();
             lblTitle = new Label();
             progressBar = new ProgressBar();
             lblProgress = new Label();
             thumbnailPicBox = new PictureBox();
-            lblSubtitle = new Label();
+            setSubtitle = new Label();
             cobSubtitle = new ComboBox();
             btnReset = new Button();
             status = new Label();
-            label3 = new Label();
+            downloadSpeed = new Label();
             lblSpeed = new Label();
-            label4 = new Label();
-            lblQuality = new Label();
-            label1 = new Label();
+            setTitle = new Label();
+            setQulityVideo = new Label();
+            setQualityAudio = new Label();
             ((System.ComponentModel.ISupportInitialize)thumbnailPicBox).BeginInit();
             SuspendLayout();
             // 
-            // lblQuality
+            // setQulityVideo
             // 
-            lblQuality.AutoSize = true;
-            lblQuality.Location = new Point(446, 129);
-            lblQuality.Name = "lblQuality";
-            lblQuality.Size = new Size(160, 30);
-            lblQuality.TabIndex = 8;
-            lblQuality.Text = "Select Quality :";
+            setQulityVideo.AutoSize = true;
+            setQulityVideo.Location = new Point(446, 129);
+            setQulityVideo.Name = "setQulityVideo";
+            setQulityVideo.Size = new Size(160, 30);
+            setQulityVideo.TabIndex = 8;
+            setQulityVideo.Text = "Select Quality :";
             // 
-            // label1
+            // setQualityAudio
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(446, 185);
-            label1.Name = "label1";
-            label1.Size = new Size(160, 30);
-            label1.TabIndex = 8;
-            label1.Text = "Select Quality :";
+            setQualityAudio.AutoSize = true;
+            setQualityAudio.Location = new Point(446, 185);
+            setQualityAudio.Name = "setQualityAudio";
+            setQualityAudio.Size = new Size(160, 30);
+            setQualityAudio.TabIndex = 8;
+            setQualityAudio.Text = "Select Quality :";
             // 
             // url
             // 
@@ -169,14 +169,14 @@
             cmbFormat.Size = new Size(152, 38);
             cmbFormat.TabIndex = 7;
             // 
-            // lblFormat
+            // setFormatVideo
             // 
-            lblFormat.AutoSize = true;
-            lblFormat.Location = new Point(108, 129);
-            lblFormat.Name = "lblFormat";
-            lblFormat.Size = new Size(159, 30);
-            lblFormat.TabIndex = 9;
-            lblFormat.Text = "Select Format :";
+            setFormatVideo.AutoSize = true;
+            setFormatVideo.Location = new Point(108, 129);
+            setFormatVideo.Name = "setFormatVideo";
+            setFormatVideo.Size = new Size(159, 30);
+            setFormatVideo.TabIndex = 9;
+            setFormatVideo.Text = "Select Format :";
             // 
             // cmbAudioFormat
             // 
@@ -194,14 +194,14 @@
             cmbAudioQuality.Size = new Size(152, 38);
             cmbAudioQuality.TabIndex = 7;
             // 
-            // label2
+            // setFormatAudio
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(108, 185);
-            label2.Name = "label2";
-            label2.Size = new Size(159, 30);
-            label2.TabIndex = 9;
-            label2.Text = "Select Format :";
+            setFormatAudio.AutoSize = true;
+            setFormatAudio.Location = new Point(108, 185);
+            setFormatAudio.Name = "setFormatAudio";
+            setFormatAudio.Size = new Size(159, 30);
+            setFormatAudio.TabIndex = 9;
+            setFormatAudio.Text = "Select Format :";
             // 
             // lblTitle
             // 
@@ -234,14 +234,14 @@
             thumbnailPicBox.TabIndex = 13;
             thumbnailPicBox.TabStop = false;
             // 
-            // lblSubtitle
+            // setSubtitle
             // 
-            lblSubtitle.AutoSize = true;
-            lblSubtitle.Location = new Point(770, 129);
-            lblSubtitle.Name = "lblSubtitle";
-            lblSubtitle.Size = new Size(185, 30);
-            lblSubtitle.TabIndex = 14;
-            lblSubtitle.Text = "Select Language :";
+            setSubtitle.AutoSize = true;
+            setSubtitle.Location = new Point(770, 129);
+            setSubtitle.Name = "setSubtitle";
+            setSubtitle.Size = new Size(185, 30);
+            setSubtitle.TabIndex = 14;
+            setSubtitle.Text = "Select Language :";
             // 
             // cobSubtitle
             // 
@@ -269,14 +269,14 @@
             status.TabIndex = 15;
             status.Text = "Status";
             // 
-            // label3
+            // downloadSpeed
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(770, 185);
-            label3.Name = "label3";
-            label3.Size = new Size(192, 30);
-            label3.TabIndex = 16;
-            label3.Text = "Download Speed :";
+            downloadSpeed.AutoSize = true;
+            downloadSpeed.Location = new Point(770, 185);
+            downloadSpeed.Name = "downloadSpeed";
+            downloadSpeed.Size = new Size(192, 30);
+            downloadSpeed.TabIndex = 16;
+            downloadSpeed.Text = "Download Speed :";
             // 
             // lblSpeed
             // 
@@ -287,35 +287,35 @@
             lblSpeed.TabIndex = 16;
             lblSpeed.Text = "00 Mbps";
             // 
-            // label4
+            // setTitle
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(14, 244);
-            label4.Name = "label4";
-            label4.Size = new Size(68, 30);
-            label4.TabIndex = 17;
-            label4.Text = "Title :";
+            setTitle.AutoSize = true;
+            setTitle.Location = new Point(14, 244);
+            setTitle.Name = "setTitle";
+            setTitle.Size = new Size(68, 30);
+            setTitle.TabIndex = 17;
+            setTitle.Text = "Title :";
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(13F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1123, 547);
-            Controls.Add(label4);
+            ClientSize = new Size(1123, 514);
+            Controls.Add(setTitle);
             Controls.Add(lblSpeed);
-            Controls.Add(label3);
+            Controls.Add(downloadSpeed);
             Controls.Add(status);
-            Controls.Add(lblSubtitle);
+            Controls.Add(setSubtitle);
             Controls.Add(thumbnailPicBox);
             Controls.Add(lblProgress);
             Controls.Add(progressBar);
             Controls.Add(lblTitle);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(lblFormat);
+            Controls.Add(setFormatAudio);
+            Controls.Add(setQualityAudio);
+            Controls.Add(setFormatVideo);
             Controls.Add(cmbAudioQuality);
-            Controls.Add(lblQuality);
+            Controls.Add(setQulityVideo);
             Controls.Add(cmbAudioFormat);
             Controls.Add(cmbFormat);
             Controls.Add(cobSubtitle);
@@ -352,20 +352,20 @@
         private RadioButton rdAudio;
         private ComboBox cmbQuality;
         private ComboBox cmbFormat;
-        private Label lblFormat;
+        private Label setFormatVideo;
         private ComboBox cmbAudioFormat;
         private ComboBox cmbAudioQuality;
-        private Label label2;
+        private Label setFormatAudio;
         private Label lblTitle;
         private ProgressBar progressBar;
         private Label lblProgress;
         private PictureBox thumbnailPicBox;
-        private Label lblSubtitle;
+        private Label setSubtitle;
         private ComboBox cobSubtitle;
         private Button btnReset;
         private Label status;
-        private Label label3;
+        private Label downloadSpeed;
         private Label lblSpeed;
-        private Label label4;
+        private Label setTitle;
     }
 }
