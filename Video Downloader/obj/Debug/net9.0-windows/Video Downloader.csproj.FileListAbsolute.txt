@@ -1,0 +1,16 @@
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\bin\Debug\net9.0-windows\Video Downloader.exe
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\bin\Debug\net9.0-windows\Video Downloader.deps.json
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\bin\Debug\net9.0-windows\Video Downloader.runtimeconfig.json
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\bin\Debug\net9.0-windows\Video Downloader.dll
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\bin\Debug\net9.0-windows\Video Downloader.pdb
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video_Downloader.MainForm.resources
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video Downloader.csproj.GenerateResource.cache
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video Downloader.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video Downloader.AssemblyInfoInputs.cache
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video Downloader.AssemblyInfo.cs
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video Downloader.csproj.CoreCompileInputs.cache
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video Downloader.dll
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\refint\Video Downloader.dll
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video Downloader.pdb
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\Video Downloader.genruntimeconfig.cache
+D:\Learning\C#\MyGitHub\Video Downloader\Video Downloader\obj\Debug\net9.0-windows\ref\Video Downloader.dll
